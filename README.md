@@ -11,6 +11,11 @@ chạy script `init.sh` để `initiate` các router, config, shard với nhau
 `./init.sh`
 
 ### Bước 3:
+Bật chế độ shard cho database
+```docker exec -it router mongo
+sh.enableSharding("my_db")```
+
+### Bước 4:
 kiểm tra kết quả
 `docker exec -it router bash -c  "echo 'sh.status()' | mongo"`
 
