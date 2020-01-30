@@ -12,7 +12,7 @@ chạy script `init.sh` để `initiate` các router, config, shard với nhau
 
 ### Bước 3:
 kiểm tra kết quả
-`docker exec -it router echo 'sh.status()' | mongo`
+`docker exec -it router bash -c  "echo 'sh.status()' | mongo"`
 
 
 
