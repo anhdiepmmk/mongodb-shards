@@ -24,7 +24,7 @@ kiểm tra kết quả
 ```
 MongoDB shell version v4.2.0
 connecting to: mongodb://127.0.0.1:27017/?compressors=disabled&gssapiServiceName=mongodb
-Implicit session: session { "id" : UUID("6f3bcbd7-b218-448f-96a2-9a7b993931ea") }
+Implicit session: session { "id" : UUID("508b7371-12f6-4110-8be1-91590b89bacd") }
 MongoDB server version: 4.2.0
 --- Sharding Status ---
   sharding version: {
@@ -56,6 +56,7 @@ MongoDB server version: 4.2.0
                         chunks:
                                 shard01	1
                         { "_id" : { "$minKey" : 1 } } -->> { "_id" : { "$maxKey" : 1 } } on : shard01 Timestamp(1, 0)
+        {  "_id" : "my_db",  "primary" : "shard02",  "partitioned" : true,  "version" : {  "uuid" : UUID("38ea5dce-a5c2-498e-a318-535b81c7d76d"),  "lastMod" : 1 } }
 
 bye
 ```
