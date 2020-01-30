@@ -62,5 +62,9 @@ bye
 ```
 
 
+#### Để thao tác quản trị docker dễ dàng hơn có thể sử dụng
 
+```
+docker run -d -p 9000:9000 --restart always  -v /var/run/docker.sock:/var/run/docker.sock -v /your/path/data/portainer:/data --name my-portainer  portainer/portainer
+```
 
